@@ -392,7 +392,7 @@ export default function Home() {
                     <option value="Trainer">Trainer</option>
                     <option value="Nutritionist">Nutritionist</option>
                   </select>
-                  {error && <p style={{ color: "#B71C1C", fontSize: "0.85rem", margin: 0 }}>{error}</p>}
+                  {error && <p className="signup-error" style={{ color: "#B71C1C", fontSize: "0.85rem" }}>{error}</p>}
                   <button type="submit" className="btn-primary" disabled={submitting} data-testid="button-request-access">
                     {submitting ? "Submitting…" : "Request Access"}
                   </button>
