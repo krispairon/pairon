@@ -5,7 +5,7 @@ const MARQUEE_ITEMS = [
   "PERSONAL TRAINING",
   "NUTRITION COACHING",
   "CERTIFIED PROFESSIONALS",
-  "HOUSTON TX",
+  "AVAILABLE NATIONWIDE",
   "COMPATIBILITY MATCHING",
   "GOAL-DRIVEN RESULTS",
   "PAIRON",
@@ -186,7 +186,7 @@ export default function Home() {
                 <path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
               </svg>
             </a>
-            <span className="hero-badge">Launching in Houston</span>
+            <span className="hero-badge">Available across the US</span>
           </motion.div>
         </motion.div>
 
@@ -350,7 +350,7 @@ export default function Home() {
           <motion.p className="section-overline" variants={fadeUp}>Early Access</motion.p>
           <motion.h2 className="signup-title" variants={fadeUp}>Be First.</motion.h2>
           <motion.p className="signup-sub" variants={fadeUp}>
-            We're launching in Houston. Get early access before we open to the public.
+            We're available across the US. Get early access before we open to the public.
           </motion.p>
 
           <motion.div variants={fadeUp}>
@@ -422,7 +422,7 @@ export default function Home() {
         <span className="footer-divider" aria-hidden="true" />
         <span className="footer-copy">© 2026</span>
         <span className="footer-divider" aria-hidden="true" />
-        <span className="footer-tagline">Built in Houston.</span>
+        <span className="footer-tagline">Available in all 50 states.</span>
       </footer>
     </div>
   );
