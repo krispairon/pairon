@@ -227,7 +227,6 @@
   background: linear-gradient(to bottom, rgba(247,244,240,0.97) 0%, transparent 100%);
 }
 
-[data-theme="light"] .nav-logo { color: #B71C1C; }
 
 [data-theme="light"] .nav-cta {
   color: #505050;
@@ -357,11 +356,9 @@
 }
 
 .nav-logo {
-  font-family: 'Playfair Display', serif;
-  font-size: 1.6rem;
-  font-weight: 700;
-  color: #B71C1C;
-  letter-spacing: -0.02em;
+  height: 28px;
+  width: auto;
+  display: block;
 }
 
 .nav-cta {
@@ -994,10 +991,9 @@
 }
 
 .footer-logo {
-  font-family: 'Playfair Display', serif;
-  font-size: 1rem;
-  font-weight: 700;
-  color: #B71C1C;
+  height: 20px;
+  width: auto;
+  display: block;
 }
 
 .footer-divider {
