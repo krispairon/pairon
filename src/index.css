@@ -1018,13 +1018,15 @@
 /* ── RESPONSIVE ───────────────────────────────────────────── */
 @media (max-width: 900px) {
   .nav { padding: 1rem 1.25rem; }
-  .nav-cta { display: none; }
+  .nav-cta { padding: 0.4rem 0.9rem; font-size: 0.7rem; }
 
-  .hero-content { text-align: center; padding-bottom: 10rem; }
+  .hero-section { justify-content: flex-end; padding-top: 6rem; }
+  .hero-content { text-align: center; padding-bottom: 3rem; }
   .hero-sub { margin-left: auto; margin-right: auto; }
   .hero-actions { justify-content: center; }
 
-  .stats-bar { flex-direction: column; }
+  /* In flow on mobile so it can't cover the hero CTA */
+  .stats-bar { position: relative; flex-direction: column; width: calc(100% + 4rem); margin: 0 -2rem; }
   .stat-item { border-right: none; border-bottom: 1px solid rgba(255,255,255,0.05); padding: 1rem 1.5rem; }
   .stat-item:last-child { border-bottom: none; }
 
