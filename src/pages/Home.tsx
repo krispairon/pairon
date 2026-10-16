@@ -78,6 +78,7 @@ export default function Home() {
   const [submitting, setSubmitting] = useState(false);
   const [error, setError] = useState("");
   const [light, setLight] = useState(true);
+  const logoSrc = light ? "/Pairon_Lockup_Light.svg" : "/Pairon_Lockup_Transparent.svg";
   const heroRef = useRef<HTMLDivElement>(null);
   const { scrollYProgress } = useScroll({ target: heroRef, offset: ["start start", "end start"] });
   const heroY = useTransform(scrollYProgress, [0, 1], ["0%", "20%"]);
@@ -115,7 +116,7 @@ export default function Home() {
     <div className="page-root" data-theme={light ? "light" : "dark"}>
       {/* NAV */}
       <nav className="nav">
-        <span className="nav-logo">Pairon</span>
+        <img src={logoSrc} alt="Pairon" className="nav-logo" />
         <div className="nav-right">
           <button
             className="theme-toggle"
@@ -418,7 +419,7 @@ export default function Home() {
 
       {/* FOOTER */}
       <footer className="footer">
-        <span className="footer-logo">Pairon</span>
+        <img src={logoSrc} alt="Pairon" className="footer-logo" />
         <span className="footer-divider" aria-hidden="true" />
         <span className="footer-copy">© 2026</span>
         <span className="footer-divider" aria-hidden="true" />
